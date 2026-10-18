@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "method": "bm25",
+  "source": {
+    "kind": "saved_run_experiment_harness_snapshot",
+    "revision": "1e0991c9faae361d930a14d075b27d0f16a92fa4",
+    "path": "src/gems_rag/retrieval.py",
+    "sha256": "c2d1d399dd43c8283f1c4f20c28d4ceab7a03a92c4f1cd1f9dcb5919107a6d73"
+  },
+  "extraction_date": "2026-10-18",
+  "scope": "Original saved-run BM25 definitions are extracted unchanged. The standalone CLI reverses the documented shared-corpus export formatting before calling them.",
+  "upstream": null,
+  "shared_study_assets": {
+    "repository": "https://github.com/GEMS-RAG/rag",
+    "corpus": "indexes/corpus/chunks.jsonl",
+    "corpus_sha256": "1035540a107be1e6016a98f7543faadd53a187a2cca8bd528fcf7beb3d6f529d"
+  },
+  "files": [
+    {
+      "path": "src/comparison_support/__init__.py",
+      "source_path": "src/comparison_support/__init__.py",
+      "source_repository": "https://github.com/GEMS-RAG/rag",
+      "source_revision": "8e981f2e3ae98a69516206cc19fca010a3f33d4e",
+      "bytes": 61,
+      "sha256": "0217b132754833ec04b14fffabcba0fa95fdd4a87b7e8a4b754410fd61c4a06e"
+    },
+    {
+      "path": "src/comparison_support/types.py",
+      "source_path": "src/comparison_support/types.py",
+      "source_repository": "https://github.com/GEMS-RAG/rag",
+      "source_revision": "8e981f2e3ae98a69516206cc19fca010a3f33d4e",
+      "bytes": 1479,
+      "sha256": "09ca44429937489ae11c87486bcfee10aa1a9afc70704a9d6d14146254ed50fb"
+    },
+    {
+      "path": "src/comparison_support/data.py",
+      "source_path": "src/comparison_support/data.py",
+      "source_repository": "https://github.com/GEMS-RAG/rag",
+      "source_revision": "8e981f2e3ae98a69516206cc19fca010a3f33d4e",
+      "bytes": 4385,
+      "sha256": "b28dadc1f44f944967305b0e278933ca3e71aa9405de304c952a7d2f1996f402"
+    },
+    {
+      "path": "src/comparison_support/bm25.py",
+      "source_path": "src/gems_rag/retrieval.py",
+      "source_revision": "1e0991c9faae361d930a14d075b27d0f16a92fa4",
+      "source_sha256": "c2d1d399dd43c8283f1c4f20c28d4ceab7a03a92c4f1cd1f9dcb5919107a6d73",
+      "bytes": 5015,
+      "sha256": "04d51b2f95af05834f05222e0886085c2a597d7bd51f0cf2a6b84d418025b551",
+      "extracted_symbols": [
+        {
+          "name": "TOKEN_RE",
+          "start_line": 19,
+          "end_line": 19,
+          "sha256": "f9b06728c413b6a4056b43fa944b3f842162e47942f6e3cf1cad66883a7c02ea"
+        },
+        {
+          "name": "SECTION_RE",
+          "start_line": 20,
+          "end_line": 20,
+          "sha256": "c60ad2db7f95a28739457777e8e6a7f480beebb509dc8d81dc874a21301f4f79"
+        },
+        {
+          "name": "FIGURE_RE",
+          "start_line": 21,
+          "end_line": 21,
+          "sha256": "7fa21d7f5f4c963828b4f8590407747aba887539c0d744269b3d146caa46df73"
+        },
+        {
+          "name": "tokenize",
+          "start_line": 36,
+          "end_line": 37,
+          "sha256": "e599eeec0d3b3b9e43d81dc487b66b27c546040e6fbbfbd34a2e8c140e67873a"
+        },
+        {
+          "name": "evidence_text_from_chunk",
+          "start_line": 40,
+          "end_line": 49,
+          "sha256": "06034221e8bfb623aa60fca5beb206f713b81c7120d33d3ee7d799b9f0552fda"
+        },
+        {
+          "name": "Retriever",
+          "start_line": 52,
+          "end_line": 57,
+          "sha256": "9be8dd663c00429a96eb596c9cba1433adcdbc74a1d16da87b38d19a77d26fc1"
+        },
+        {
+          "name": "BM25Retriever",
+          "start_line": 60,
+          "end_line": 122,
+          "sha256": "1791140bd57e219b8313b98ab8a89cd05e902a8af26ab6208b196dbe53b588ba"
+        },
+        {
+          "name": "_chunk_search_text",
+          "start_line": 714,
+          "end_line": 718,
+          "sha256": "ea1d7820fafabb07dc98131d05e75446b13dda0e0290aae2b730454dd7e1763e"
+        },
+        {
+          "name": "_chunk_to_evidence",
+          "start_line": 1059,
+          "end_line": 1077,
+          "sha256": "d8446744e1484a8f0633a87cf07ff79c7be84cb8a1b7338dac5a97c561026704"
+        }
+      ]
+    }
+  ],
+  "adaptations": [
+    {
+      "path": "pipelines/query_bm25.py",
+      "purpose": "Standalone CLI and lossless shared-corpus schema conversion; no scoring or ranking logic.",
+      "sha256": "e7e0c14704cce271b8e23ebc764ce0c8806927e750ac8e9173a735b80104e894",
+      "bytes": 3565
+    }
+  ]
+}
